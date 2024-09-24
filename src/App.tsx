@@ -17,6 +17,9 @@ function App() {
 
   const setUserCookie = (user: string) => {
     Cookies.set('user', user)
+    Cookies.set('name', 'TestName')
+    Cookies.set('active', 'active')
+    Cookies.set('expired', '7 days')
   }
 
   const setCookie = () => {
