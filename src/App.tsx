@@ -15,8 +15,13 @@ function App() {
     Cookies.set('language', language);
   }
 
+  const setUserCookie = (user: string) => {
+    Cookies.set('user', user)
+  }
+
   const setCookie = () => {
     setLanguageCookie('th')
+    setUserCookie('TestUser')
   }
 
   useEffect(()=>{
